@@ -15,7 +15,7 @@ def generate_blog(topic, word_limit=300):
     blog = f"### Introduction\n\n{introduction}\n\n### Main Body\n\n{main_body}\n\n### Conclusion\n\n{conclusion}"
     return blog
 
-# Testing in Jupyter Notebook
+
 if __name__ == "__main__":
     # For local testing
     topic = input("Enter a topic: ")
@@ -25,7 +25,7 @@ if __name__ == "__main__":
     print("\nGenerated Blog:\n")
     print(blog)
 
-    # Uncomment below to run Gradio interface in notebook
+   
     interface = gr.Interface(
         fn=generate_blog,
         inputs=[
